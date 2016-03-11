@@ -1,0 +1,53 @@
+body {
+  position: relative;
+  right: 0;
+}
+body.open {
+  overflow: hidden;
+}
+#slide_menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+#slide_menu > div {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+@media all and (min-width: 769px) {
+#slide_menu {
+  display: none;
+}
+}
+
+@media all and (max-width: 768px) {
+.slide_menu_title {
+  line-height: 40px;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #000;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+#slide_menu .slide_menu_button {
+  float: right;
+}
+.slide_menu_list01 {
+  border-top: 1px solid #ccc;
+}
+.slide_menu_list01 li {
+  border-bottom: 1px solid #ccc;
+}
+.slide_menu_list01 li a {
+  display: block;
+  line-height: 32px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+}
